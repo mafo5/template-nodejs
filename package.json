@@ -6,18 +6,29 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest --ci",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@next/font": "13.1.6",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.16.4",
+    "@testing-library/react": "13.2.0",
+    "@testing-library/user-event": "14.2.0",
     "@types/node": "18.14.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "@types/testing-library__jest-dom": "5.14.5",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
-    "next": "13.1.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "eslint-plugin-testing-library": "^5.10.2",
+    "jest": "28.1.0",
+    "jest-environment-jsdom": "28.1.0",
     "typescript": "4.9.5"
   }
 }
