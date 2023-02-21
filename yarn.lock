@@ -1186,6 +1186,11 @@ array.prototype.tosorted@^1.1.1:
     es-shim-unscopables "^1.0.0"
     get-intrinsic "^1.1.3"
 
+assertion-error@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/assertion-error/-/assertion-error-1.1.0.tgz#e60b6b0e8f301bd97e5375215bda406c85118c0b"
+  integrity sha512-jgsaNduz+ndvGyFt3uSuWqvy4lCnIJiovtouQN5JZHOKCS2QuhEdbcQHFhVksz2N2U9hXJo8odG7ETyWlEeuDw==
+
 ast-types-flow@^0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/ast-types-flow/-/ast-types-flow-0.0.7.tgz#f70b735c6bca1a5c9c22d982c3e39e7feba3bdad"
@@ -1282,6 +1287,11 @@ balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
+
+bluebird@^3.3.4:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
+  integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
 brace-expansion@^1.1.7:
   version "1.1.11"
@@ -2351,6 +2361,20 @@ grapheme-splitter@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/grapheme-splitter/-/grapheme-splitter-1.0.4.tgz#9cf3a665c6247479896834af35cf1dbb4400767e"
   integrity sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==
+
+hamjest-sinon@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hamjest-sinon/-/hamjest-sinon-1.2.0.tgz#36814dd84b91e89702a7985af29ec6fe9def0f29"
+  integrity sha512-d8vGr29G2kousL2D3y8oR3oKH7/3pOc2ikqsEl0FnBXq3yW5RO9RG4c8BI65dudiQxVyw8MdJ6LVsFjvQvUcjQ==
+
+hamjest@^3.7.3:
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/hamjest/-/hamjest-3.7.3.tgz#7e133c1ce7ebb1f26c52251992c6416dc8ba19df"
+  integrity sha512-HOEutQrkZsARJKavuh8auAfilz3sR9IFeDvzaa4EKUu8Pf05MIMbyy26wRO0MHLd7kJ9gUxLMZlelg4nX7sVEA==
+  dependencies:
+    assertion-error "^1.1.0"
+    bluebird "^3.3.4"
+    lodash "^4.17.15"
 
 has-bigints@^1.0.1, has-bigints@^1.0.2:
   version "1.0.2"
