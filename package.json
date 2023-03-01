@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev:nextjs": "next dev",
+    "dev:storybook": "storybook dev -p 6006",
+    "dev": "concurrently \"yarn:dev:*\"",
+    "build:nextjs": "next build",
+    "build:storybook": "storybook build",
+    "build": "concurrently \"yarn:build:*\"",
     "start": "next start",
-    "lint": "next lint",
-    "test": "jest --ci",
-    "test:watch": "jest --watch"
+    "check:lint": "next lint",
+    "check:test": "jest --ci",
+    "check:test:watch": "jest --watch",
+    "check:all": "yarn check:lint && yarn check:test",
+    "update:storybook": "npx storybook@next upgrade --prerelease"
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -17,6 +23,14 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-beta.58",
+    "@storybook/addon-interactions": "^7.0.0-beta.58",
+    "@storybook/addon-links": "^7.0.0-beta.58",
+    "@storybook/addon-mdx-gfm": "^7.0.0-beta.58",
+    "@storybook/blocks": "^7.0.0-beta.58",
+    "@storybook/nextjs": "^7.0.0-beta.58",
+    "@storybook/react": "^7.0.0-beta.58",
+    "@storybook/testing-library": "^0.0.14-next.1",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.2.0",
     "@testing-library/user-event": "14.2.0",
@@ -25,14 +39,18 @@
     "@types/react-dom": "18.0.11",
     "@types/testing-library__jest-dom": "5.14.5",
     "autoprefixer": "^10.4.13",
+    "concurrently": "^7.6.0",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
+    "eslint-plugin-storybook": "^0.6.11",
     "eslint-plugin-testing-library": "^5.10.2",
     "hamjest": "^3.7.3",
     "hamjest-sinon": "^1.2.0",
     "jest": "28.1.0",
     "jest-environment-jsdom": "28.1.0",
     "postcss": "^8.4.21",
+    "storybook": "^7.0.0-beta.58",
+    "storybook-css-modules": "^1.0.8",
     "tailwindcss": "^3.2.7",
     "typescript": "4.9.5"
   }
